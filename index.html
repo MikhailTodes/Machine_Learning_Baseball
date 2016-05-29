@@ -1,32 +1,12 @@
 ---
 layout: main
-title: Portfolio
+title: Homepage
 ---
 
 <main id="portfolio">
-  <h1 class="page-header">Projects</h1>
-   <section>
-    <div id="portfolio-gallery">
-      {% assign sorted_pages = site.projects | sort:"path" %}
-      {% for project in sorted_pages %}
-      <div class="container">
-	<div class="aspect-ratio-keeper"> </div>
-	<div class="content">
-	  <a href="{{ site.baseurl }}{{ project.url }}">
-	    <span class="link-spanner"></span>
-	    <div class="image-container">
-	      <div class="image-vertical-align-box" >
-		<img class="inner" src="{{ project.image }}">
-	      </div>
-	    </div>
-	    <div class="inner-text">
-	      <h4>{{ project.title }}</h4>
-	    </div>
-	  </a>
-	</div>
-      </div>
-      {% endfor %}
-    </div>
-  </section>
-<h3 align="right">*Under Construction</h3>
+  <h1 class="page-header" align="center">Baseball Predictions</h1>
+  <h2 align="center">EECS349 - Machine Learning Final Project</h2>
+  <h3 align="center">Mikhail Todes - Tim Herrmann - Nathan Corwin</h3>
+   
+
 </main>
