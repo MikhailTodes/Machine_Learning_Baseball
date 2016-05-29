@@ -3,7 +3,7 @@ title:              Machine Learning Baseball Predictions
 email:              .
 description:        "Final Project for EECS349"
 url:                "http://localhost:4000"
-baseurl:            /Machine_Learning_Baseball/
+baseurl:            /Machine_Learning_Baseball
 
 # File structure settings
 image_path:         /public/images
