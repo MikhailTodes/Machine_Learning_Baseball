@@ -1,9 +1,9 @@
 # Site settings
-title:              Mikhail Todes Portfolio
-email:              mikhailtodes2016@u.northwestern.edu
-description:        "Portfolio displaying Mikhail Todes"
+title:              Machine Learning Baseball Predictions
+email:              
+description:        "Final Project for EECS349"
 url:                "http://localhost:4000"
-baseurl:            /portfolio
+baseurl:            /Baseball_Predictions
 
 # File structure settings
 image_path:         /public/images
