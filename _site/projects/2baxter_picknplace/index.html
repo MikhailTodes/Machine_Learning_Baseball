@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+
+	<title>Mikhail Todes Portfolio</title>
+	<link rel="icon" type="image/png" href="/portfolio/public/images/head_icon.jpg">
+
+	<link rel="stylesheet" href="/portfolio/public/stylesheets/style.css">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+
+  <body>
+
+    <div id="wrapper">
+
+      <header>
+    <nav>
+    	<a href="/portfolio/"><h1>Mikhail Todes</h1></a>
+    	<ul>
+    		<li><a href="/portfolio/">Home</a></li>
+    		<li><a href="/portfolio/about/">About</a></li>
+    		<li><a href="/portfolio/contact/">Contact</a></li>
+    	</ul>
+    </nav>
+</header>
+
+
+      <main class="project">
+	<section id="contact-content">
+		<img id="project-image" src="https://github.com/MikhailTodes/portfolio/blob/gh-pages/public/images/baxter_final_pose.png?raw=true">
+		<h1 id="project-title">Baxter Pick and Place</h1>
+		<h2 id="project-date">October, 2015</h2>
+
+		<h2 id="overview">Overview</h2>
+<p>As a final project for the Embedded Systems course I took, we were required to use Rethink Robotics’ Baxter for a pick and place application.</p>
+
+<h2 id="additional-components">Additional Components</h2>
+
+<p>The basic project requirement was for Baxter to pick up 6 objects and place them in a container on the side. Extra marks were given for the following:</p>
+
+<ul>
+  <li>Picking up different shaped objects.</li>
+  <li>Picking up different coloured objects.</li>
+  <li>The speed at which Baxter could successfully pick and place the 6 items.</li>
+  <li>Being able to move the objects around during the routine and allowing Baxter to reconfigure his movements dynamically.</li>
+  <li>Picking up objects in any orientation.</li>
+</ul>
+
+<h2 id="the-strategy">The Strategy</h2>
+<p>The first task tackled was to build an IK (inverse kinematics) solver so that all Baxter’s joint angles could be calculated in order to send his grippers (end effector) to whatever position was needed to pick up the object.</p>
+
+<p>The second task was the image processing. The camera in the wrist of Baxter’s right hand was used to sweep across the top of the table and find the objects. Once an object was found, a bounding rectangle was drawn around it with the lowest border line being coloured red as apposed the yellow others. Baxter would then reconfigure the orientation of his gripper by adjusting until the gradient of the red line was zero.</p>
+
+<p>Finally Baxter’s arm was lowered to pick the object and place it in the container set to the side of the table.</p>
+
+<p>Baxter managed to successfully locate, orientate, pick, and place six objects of varying shapes, sizes, and colour in a time of 1m46s. An unbeaten time by any other challengers.</p>
+
+<p>For a few creativity points and a smile from the judges, Baxter was set to strike a cheerleaders pose with a big smile when there were no more objects detected for pick up.</p>
+
+<h2 id="code">Code</h2>
+<p>The projet write up as well as all the code written can be found <a href="https://github.com/therrma2/Baxter-Pick-And-Place" target="_blank">here</a>.</p>
+
+<h2 id="video">Video</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Uo60e5Leo50" frameborder="0" allowfullscreen=""></iframe>
+
+
+	</section>
+
+</main>
+
+
+      <footer>
+    <ul>
+    	<li>mikhail@u.northwestern.edu<br>(224) 600-2384</li>
+        <li align="right">2145 Sheridan Rd,<br>Evanston, IL, 60201</li>    	
+    </ul>
+</footer>
+
+
+
+    </div>
+
+  </body>
+</html>
