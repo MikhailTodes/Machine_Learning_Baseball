@@ -19,7 +19,7 @@ html {
     /* Footer */ }
     html body header {
       width: 100%;
-      background-color: #2222FF;
+      background-color: #00A0FF;
       color: #FFF; }
       html body header nav {
         margin: 0 auto;
@@ -196,7 +196,7 @@ html {
     html body footer {
       margin-top: 40px;
       width: 100%;
-      background-color: #2222FF;
+      background-color: #00A0FF;
       color: #fff; }
       html body footer ul {
         margin: 0 auto;
