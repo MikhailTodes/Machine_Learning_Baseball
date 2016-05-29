@@ -1,6 +1,6 @@
 # Site settings
 title:              Machine Learning Baseball Predictions
-email:              
+email:              .
 description:        "Final Project for EECS349"
 url:                "http://localhost:4000"
 baseurl:            /Baseball_Predictions
