@@ -1,0 +1,14 @@
+---
+layout: main
+---
+<main class="result">
+	<section id="contact-content">
+		<img id="result-image" src="{{ page.image }}">
+		<h1 id="result-title">{{ page.title }}</h1>
+		<h2 id="result-date">{{ page.date |  date: '%B, %Y'}}</h2>
+
+		{{ content }}
+
+	</section>
+
+</main>
