@@ -56,6 +56,9 @@ The final model tested was a multilayer perceptron model.  The best results achi
     <img class="one" style='text-align: center; height: 100%; width: 100%; object-fit: contain' src="https://github.com/MikhailTodes/Machine_Learning_Baseball/blob/gh-pages/public/images/10_layer_perceptron_error_curve.png?raw=true">
 </div>
 
+<div class="container"  align="middle">
+    <img class="one" style='text-align: center; height: 100%; width: 100%; object-fit: contain' src="https://github.com/MikhailTodes/Machine_Learning_Baseball/blob/gh-pages/public/images/learning_curves.png?raw=true">
+</div>
 <br />
 
 # Attribute Analysis:
