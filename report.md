@@ -74,6 +74,12 @@ However, removing other attributes resulted in no improvement of the models over
 
 <br />
 
+# Analysis of Results
+
+Ultimately, the multi-layered perceptron had the best performance with a learning rate of 0.1. This model had the lowest absolute mean error, and was significantly lower than the absolute mean error of the baseline. This means that the multi-layered perceptron model most accurately predicted the next years batting average for each player based on the stats of the year before. Specifically, the model had an absolute mean error of 0.0545 for the training and validation data, and 0.0562 on the held out data. 
+
+<br />
+
 # Future Work:
 
 There are a few potential area for future work in this project. Obviously more work can be done on refining the models and improving accuracy. Additionally, the models from this project could be used to make predictions about current MLB players and at the end of the season, the actual statistics could be compared to those predictions. 
