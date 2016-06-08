@@ -53,14 +53,43 @@ The second model was M5P.  This model combines elements of decision trees and li
 The final model tested was a multilayer perceptron model.  The best results achieved were using a 10 layer model with a learning rate of .1.  Further decreasing the learning rate degraded accuracy.  This model performed slightly better than the M5P model with a training accuracy of .055 and held out accuracy of .056.
 
 <div class="container"  align="middle">
-    <img class="one" style='text-align: center; height: 42%; width: 42%; object-fit: contain' src="https://github.com/MikhailTodes/Machine_Learning_Baseball/tree/gh-pages/public/images/10_layer_perceptron_error_curve.png?raw=true">
+    <img class="one" style='text-align: center; height: 100%; width: 100%; object-fit: contain' src="https://github.com/MikhailTodes/Machine_Learning_Baseball/blob/gh-pages/public/images/10_layer_perceptron_error_curve.png?raw=true">
 </div>
 
 <br />
 
 # Attribute Analysis:
 
+It was attempted to further improve upon these results by analyzing the nine attributes and removing extraneous ones. Using Weka's CfsSubsetEval attribute analyzer, it was found the the attributes most strongly correlated to the next year's vatting average were:
+
+	  * Year 
+	  * At Bats 
+	  * Age 
+	  * Current Batting Average 
+
+However, removing other attributes resulted in no improvement of the models over those built using all the attributes. In most cases, the absolute mean error often increased. This implies that while the four attributes selected may have more information gain, none of the attributes are completely irreverent for this project.
+
 <br />
 
 # Future Work:
 
+There are a few potential area for future work in this project. Obviously more work can be done on refining the models and improving accuracy. Additionally, the models from this project could be used to make predictions about current MLB players and at the end of the season, the actual statistics could be compared to those predictions. 
+
+<br />
+
+
+Additionally, it is conceivable that the approach from this project could be applied to other statistics in baseball. For instance, models could be created to predict other attributes used in this project such as RBI's or Strike-Outs. 
+
+<br />
+
+## Group Member Participation:
+
+Tim -  Data Processing, Model Evaluation, Report Writing
+
+<br />
+
+Mikhail – Data Analysis, Website Building
+
+<br />
+
+Nathan – Data Analysis, Attribute Analysis, Report Writing

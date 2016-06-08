@@ -33,8 +33,28 @@
 
   <br />
   <br />
-  <p><h2 align="left">Abstract</h2></p>
-   
+      <h2 align="left">Abstract</h2>
+  
+  This project attempted to predict the season batting average of MLB players using their previous year's statistics. This is primarily motivated by the fact that season batting average is commonly used as a standard performance metric and being able to accurately predict that stat could allow managers to better asses which players are valuable to keep or sign, and which should be let go. 
+
+<br />
+<br />
+
+To predict this statistic, data about each player from the previous year is used to build a machine learning model that predicts that payer's season batting average for the next year. In order to evaluate the models used, a baseline was created by calculating the mean absolute error is the batting average is assumed to stay the same. 
+
+<br />
+<br />
+
+Using a dataset of baseball statistics from 1990 to 2014, nine attributes were selected to build machine learning models with. These included commonly measured season statistics such as At-Bats, Runs Batted In, Walks, and Strikeouts, as well as information about the specific players such as Age, Salary, and Games Played. For each model created using these features the mean absolute error was compared to the baseline. The lower the model's mean absolute error than the baseline's, the better the model was said to be. All models were created with 10-fold cross validation. 
+
+<br />
+<br />
+
+The most successful models were generated using M5P, a combination of decision trees and linear regression, and a multi-layered perceptron. Both performed better than the baseline, and the multi-layered perceptron performed better than M5P. 
+
+<div class="container"  align="middle">
+    <img class="one" style='text-align: center; height: 100%; width: 100%; object-fit: contain' src="https://github.com/MikhailTodes/Machine_Learning_Baseball/blob/gh-pages/public/images/base_res_compar.png?raw=true">
+</div>
 
 </main>
 
