@@ -12,6 +12,7 @@ The goal of this project was to use machine learning to predict a Major League B
 
 The following 9 attributes were used to build the model. All 
 attributes are numerical and are for the year prior to the one being predicted: 
+
  * Year 
  * Games Played (G) 
  * At-Bats (AB) 
