@@ -1,5 +1,5 @@
 ---
-layout: Results
+layout: results
 path: /results
 url: index.html
 image:
