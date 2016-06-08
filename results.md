@@ -5,7 +5,7 @@ image:
 ---
 <br />
 
-#Motivation:
+# Motivation:
 
 The goal of this project was to use machine learning to predict a Major League Baseball player's season long batting average given their previous year's statistics.  Every year, general managers are faced with difficult decisions about which players to sign, which to let go, and how much to pay them.  Millions dollars are on the line.  The ability to empirically predict a player's batting average, a standard measure of performance, is an extremely useful tool for these general managers.
 
@@ -30,7 +30,7 @@ Data was collected from seanlahman.com and includes statistics from 1990 through
 
 <br />
 
-#Baseline Accuracy:
+# Baseline Accuracy:
 
 In order to judge model accuracy, a baseline needed to be determined.  In a case where the output is nominal, this would be done by calculating the accuracy when the most common attribute is chosen for each entry.  Since this experiment has a numerical output, the baseline was derived off the assumption that a player would have the same batting average as the previous year.  This is a very rough estimate of performance, but follows a reasonable expectation and provides a useful baseline for gauging model performance.  Using this estimate the mean absolute error for each dataset was calculated:
 
@@ -43,7 +43,7 @@ In order to judge model accuracy, a baseline needed to be determined.  In a case
 
 <br />
 
-#Models:
+# Models:
 
 Several types of models were tested before deciding on the final model.  All models were built using 10-fold cross-validation on the training set and verified against the held out set.  The first was a basic linear regression model.  With default settings in Weka, the model predicted batting averages with a mean absolute error of .072 on the training data, and .0718 on the held out data.  Despite tuning parameters, linear regression continued to perform worse than the baseline and was thus discarded.
 
@@ -53,9 +53,9 @@ The final model tested was a multilayer perceptron model.  The best results achi
 
 <br />
 
-#Attribute Analysis:
+# Attribute Analysis:
 
 <br />
 
-#Future Work:
+# Future Work:
 
